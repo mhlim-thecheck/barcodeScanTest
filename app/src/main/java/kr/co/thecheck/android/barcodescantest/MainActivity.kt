@@ -53,18 +53,7 @@ class MainActivity : AppCompatActivity() {
             return barcodeEncoder.encodeBitmap("${ssid} ${password}", BarcodeFormat.QR_CODE, 512, 512)
         } catch (e: Exception) {
         }
-//        val size = 512 //pixels
-//        val qrCodeContent = "WIFI:S:$ssid;T:WPA;P:$password;;"
-//        val hints = hashMapOf<EncodeHintType, Int>().also { it[EncodeHintType.MARGIN] = 1 } // Make the QR code buffer border narrower
-//        val bits = QRCodeWriter().encode(qrCodeContent, BarcodeFormat.QR_CODE, size, size, hints)
-//
-//        return Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888).also {
-//            for (x in 0 until size) {
-//                for (y in 0 until size) {
-//                    it.setPixel(x, y, if (bits[x, y]) Color.BLACK else Color.WHITE)
-//                }
-//            }
-//        }
+
         return null
     }
 
